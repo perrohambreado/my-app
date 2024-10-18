@@ -1,105 +1,119 @@
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: #20304A;
   color: #ffffff;
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column; /* Cambiado para permitir el centrado del contenido */
-  justify-content: center; /* Centrado vertical */
-  align-items: center; /* Centrado horizontal */
-  height: 100vh; /* Altura completa de la ventana */
-  width: 100vw; /* Ancho completo de la ventana */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Cormorant', serif;
 }
 
 Nav {
-  background: #ffffff; /* Fondo negro para el navbar */
-  padding: 10px 0; /* Padding vertical */
-  position: fixed; /* Fijo en la parte superior */
-  top: 0; /* Alínea a la parte superior */
-  width: 100%; /* Ancho completo */
-  text-align: left; /* Centrado del texto en el navbar */
-  z-index: 1000; /* Asegura que esté por encima del contenido */
+  background: #ffffff;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: left;
+  z-index: 1000;
 }
-
-
 
 .title {
-  color: #333; /* Color del texto */
-  font-size: 48px; /* Tamaño de fuente */
+  color: #333;
+  font-size: 48px;
   text-align: center;
-   margin-top: 500px;/* Alinear texto al centro */
+  margin-top: 500px;
 }
 
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-h1{
-  
+h1 {
   padding: 0;
   display: flex;
-  flex-direction: column; /* Cambiado para permitir el centrado del contenido */
-  justify-content: center; /* Centrado vertical */
+  flex-direction: column;
+  justify-content: center;
   color: #ffffff;
-
+  align-items: center;
+  text-align: center;
 }
 
 Nav li {
   padding: 0;
   display: flex;
-  justify-content: right;
   margin: 20px;
   display: inline;
 }
 
 Nav {
   margin: 0 15px;
+  justify-content: right;
 }
 
 Nav a {
-  color: #00ffcc; /* Color de texto */
-  text-decoration: none; /* Sin subrayado */
+  color: #3c3851;
+  text-decoration: none;
   font-weight: bold;
   font-size: 18px;
   transition: color 0.3s;
 }
 
-ul{
+ul {
   display: block;
-
 }
-
 
 Nav a:hover {
-  color: #ff00cc; /* Color al pasar el mouse */
+  color: #5f6e92;
 }
 
-form{
-  background: rgba(255, 255, 255, 0.553); /* Fondo blanco semi-transparente */
+form {
+  background: rgba(255, 255, 255, 0.123);
   padding: 50px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  text-align: center; 
+  border-radius: 50px 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 80px;
   width: 300px;
+  font-size: 25px;
 }
 
 form h2 {
-  color: #ffffff; /* Color del título */
+  color: #ffffff;
   margin: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-family: 'Cormorant', serif;
+  letter-spacing: 1px; 
 }
 
 form input {
   width: 100%;
+  height: 30px;
   padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #000000; /* Borde color */
+  margin: 15px 0;
+  border: 1px solid #000000;
   border-radius: 50px;
-  background: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
-  color: #000000; /* Color del texto de entrada */
+  background: #DFDEDC;
+  color: #000000;
+  font-family: 'Cormorant', serif;
+  letter-spacing: 2px; 
+  text-align: center;
+  outline: none;
+}
+
+form input:focus {
+  background: rgb(255, 255, 255);
 }
 
 form button {
@@ -107,20 +121,37 @@ form button {
   padding: 10px;
   border: none;
   border-radius: 50px;
-  background: #354838; /* Fondo botón */
-  color: #fff; /* Color del texto del botón */
+  background: #dfdedc61;
+  color: #fff;
   cursor: pointer;
   font-weight: bold;
   transition: background 0.5s;
   margin: 10px 0;
+  font-family: 'Cormorant', serif;
+  letter-spacing: 1px; 
 }
 
 form button:hover {
-  color: #000;
-  background: #ffffff9a;
+  color: #c0b6a3;
+  background: #fff;
+  border: red;
 }
 
 .message {
   color: #ff0033; 
   margin-top: 10px;
+}
+
+select {
+  margin-right: 10px;
+  background-color: #DFDEDC;
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: 'Cormorant', serif;
+}
+
+label {
+  color: #ffffff;
 }

@@ -10,7 +10,7 @@ const LoginForm = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    console.log('Intentando iniciar sesión'); // Verifica que la función se ejecute
+    console.log('Intentando iniciar sesión');
 
     if (username === 'admin' && password === 'password') {
       localStorage.setItem('loginAttempt', 'success');
@@ -24,7 +24,7 @@ const LoginForm = () => {
   return (
     <div className={styles.loginContainer}>
       <form onSubmit={handleLogin} className={styles.loginForm}>
-        <h2>Welcome</h2>
+        <h2>Welcome back</h2>
         <input
           type="text"
           placeholder="Username"

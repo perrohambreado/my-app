@@ -15,7 +15,7 @@ const Navbar = () => {
           <Link href="/registro">Registro</Link>
         </li>
         <li className={styles.navItem}>
-          <Link href="/nasa">NASA API</Link>
+          <Link href="/nasa">NASA</Link>
         </li>
         <li className={styles.navItem}>
           <Link href="/picsum">Lorem Picsum</Link>
